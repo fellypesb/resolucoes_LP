@@ -56,9 +56,7 @@ public class Main {
                 maiorSoma = soma;
                 melhorDivisor = lista.get(i);
             }
-            else if(lista.get(i) == maiorSoma){
-                return maiorSoma;
-            }
+        
             soma = 0;
         }
         return melhorDivisor;
