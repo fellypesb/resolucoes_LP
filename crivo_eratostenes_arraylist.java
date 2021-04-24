@@ -53,10 +53,11 @@ public class Main
                 		int y = arraylistPrimo.get(numTeste);
                			if((x%y==0) && (x!=y)) {
                    		arraylistPrimo.remove(i);
-               		 }
-           	}   
+               		 	}
+           		}   
             
-        }
+        	}
+		
 		return arraylistPrimo;
 	}
 
