@@ -57,11 +57,7 @@ public class Main {
                 melhorDivisor = lista.get(i);
             }
             else if(lista.get(i) == maiorSoma){
-                if(lista.get(i) < maiorSoma){
-                    melhorDivisor = lista.get(i);
-                } else {
-                    melhorDivisor = maiorSoma;
-                }
+                return maiorSoma;
             }
             soma = 0;
         }
