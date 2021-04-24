@@ -23,11 +23,11 @@ public class Main
 	    
 	    Scanner read = new Scanner(System.in);
 	    
-		int t, a, b, n, result[];
+	    int t, a, b, n, result[];
 		
-		t = read.nextInt();
+	    t = read.nextInt();
 		
-		result = new int[t];
+	    result = new int[t];
 		
 		
 		for(int i=0; i < t; i++){
