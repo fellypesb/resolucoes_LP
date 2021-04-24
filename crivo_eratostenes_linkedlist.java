@@ -21,7 +21,7 @@ public class Main
 	public static void main(String[] args) {
 		Scanner read = new Scanner(System.in);
 		
-		int n = read.nextInt();
+	int n = read.nextInt();
         
         int raiz = (int) Math.floor(Math.sqrt(n)); // retorna a raiz do valor N
         
@@ -48,15 +48,15 @@ public class Main
 		    
 		    if(linkedListPrimo.get(numTeste) > raiz) break;
             
-            for(int i=0; i<linkedListPrimo.size(); i++) {
-                int x = linkedListPrimo.get(i);
-                int y = linkedListPrimo.get(numTeste);
+            		for(int i=0; i<linkedListPrimo.size(); i++) {
+                		int x = linkedListPrimo.get(i);
+                		int y = linkedListPrimo.get(numTeste);
                 
-               	if((x%y==0) && (x != y)) {
-                    linkedListPrimo.remove(i);
-                }
-            }   
-        }
+               			if((x%y==0) && (x != y)) {
+                    		linkedListPrimo.remove(i);
+                		}
+            		}   
+        	}
 		return linkedListPrimo;
 	}
 }
