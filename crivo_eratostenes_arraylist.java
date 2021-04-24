@@ -22,7 +22,7 @@ public class Main
 	public static void main(String[] args) {
 	    Scanner read = new Scanner(System.in);
 	    
-		int n = read.nextInt();
+	int n = read.nextInt();
         
         int raiz = (int) Math.floor(Math.sqrt(n));
         
@@ -46,15 +46,15 @@ public class Main
 		// remove os multiplos dos primos da lista
 		for(int numTeste=0; numTeste<=arraylistPrimo.size()-1; numTeste++) {
 		    
-		    if(arraylistPrimo.get(numTeste) > raiz) break;
+		    	if(arraylistPrimo.get(numTeste) > raiz) break;
            
-            for(int i=0; i<arraylistPrimo.size(); i++) {
-                int x = arraylistPrimo.get(i);
-                int y = arraylistPrimo.get(numTeste);
-               	if((x%y==0) && (x!=y)) {
-                   	arraylistPrimo.remove(i);
-                }
-            }   
+            		for(int i=0; i<arraylistPrimo.size(); i++) {
+                		int x = arraylistPrimo.get(i);
+                		int y = arraylistPrimo.get(numTeste);
+               			if((x%y==0) && (x!=y)) {
+                   		arraylistPrimo.remove(i);
+               		 }
+           	}   
             
         }
 		return arraylistPrimo;
